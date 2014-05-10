@@ -1,22 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-<title>Data Mining Exercise 1</title>
-<meta name="author" content="Sun Sen">
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-<link href='http://api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.css' rel='stylesheet' />
-<link rel="stylesheet" href="MarkerCluster.css" />
-<link rel="stylesheet" href="MarkerCluster.Default.css" />
-<script src='http://api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.js'></script>
-<script src="leaflet.markercluster-src.js"></script>
-<script src="data.js"></script>
-<style>#map-basic { position:absolute; width:100%; height:100%; }</style>
+	<title>S&S</title>
+	<meta charset='UTF-8'/>
+	<meta name="author" content="Sun Sen" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href='css/home.css' rel='stylesheet' />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<link rel="SHORTCUT ICON" href="img/favicon.ico"/>
 </head>
+<body>
+<div id="wrapper">
+	<nav>
+		<ul>
+			<img id="sun" src="img/sun.png" width="60" height="60" />
+			<li data-index="0">Works</li>
+			<li data-index="1">Skills</li>
+			<li data-index="2">Courses</li>
+			<li data-index="3">About</li>
+			<img id="forest" src="img/forest.png" width="60" height="60" />
+		</ul>
+	</nav>
 
+	<section class="active" id="works">
+		<div id="works-carousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#works-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#works-carousel" data-slide-to="1"></li>
+			<li data-target="#works-carousel" data-slide-to="2"></li>
+			<li data-target="#works-carousel" data-slide-to="3"></li>
+		</ol>
 
-<body><div id='map-basic'></div>
-<script src='script.js'></script>	
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="img/teleagro.png" alt="TeleAgro+">
+				<div class="carousel-caption">
+					<a href="http://129.206.228.93/taplus_webgui/" target="_blank">TeleAgro+</a> is a navigation application for agricultural vehicles. I am currently working for this project as a student assistant.
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="img/stela.png" alt="">
+				<div class="carousel-caption">
+					<a href="http://stela.geog.uni-heidelberg.de/test" target="_blank">STELA</a> is crowd-sourcing application for the collection of solar panel locations in Germany. (Seminar Project)
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="img/adventure.png" alt="">
+				<div class="carousel-caption">
+					My adventure is an experiment to combine the resume with an animated map.
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="img/bubbles.png" alt="">
+				<div class="carousel-caption">
+					Random Bubbles is an exercise for animating multiple elements at the same time.
+				</div>
+			</div>
+		</div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#works-carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#works-carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+	</section>
+
+	<section class="" id="skills">
+		<ul>
+			<li>
+				<h3>Front End Development</h3>
+				<h4><span class="skill-name">HTML</span>
+					<span class="rating-gold">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</span>
+				</h4>
+
+				<h4>
+					<span class="skill-name">CSS</span>
+					<span class="rating-gold">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</span>
+				</h4>
+					<p><i class="fa fa-angle-double-right">&nbsp</i>media query, animation, Sass, Twitter Bootstrap</p>
+
+				<h4>
+					<span class="skill-name">JavaScript</span>
+					<span class="rating-gold">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</span>
+				</h4>
+					<p><i class="fa fa-angle-double-right">&nbsp</i>jQuery, Openlayers, mapbox, d3, backbone, underscore,
+						requireJS</p>
+			</li>
+			<li>
+				<h3>Back End Development</h3>
+				<h4><span class="skill-name">django (Python)</span>
+					<span class="rating-blue">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</span>
+				</h4>
+			</li>
+			<li>
+				<h3>Mobile Development</h3>
+				<h4><span class="skill-name">Android</span>
+					<span class="rating-green">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</span>
+				</h4>
+			</li>
+			<li>
+				<h3>Databases</h3>
+				<h4><span class="skill-name">PostgreSQL</span>
+					<span class="rating-pink">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</span>
+				</h4>
+				<h4><span class="skill-name">MongoDB</span>
+					<span class="rating-pink">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</span>
+				</h4>
+			</li>
+			<li>
+				<h3>Design Patterns</h3>
+				<h4>MVC, REST, Mediator</h4>
+			</li>
+		</ul>
+	</section>
+
+	<section id="courses">
+		<ul>
+		<li>
+			<h3>GIS</h3>
+			<h4>Webmapping (<a href="doc/webmapping_ppt.pdf" target="_blank">Presentation</a>, <a href="doc/webmapping_report.pdf" target="_blank">Report</a>)</h4>
+			<h4>Geoscripting</h4>
+			<h4>GIS-Analysis with Free und Open Source Software</h4>
+			<h4>Geodatabases</h4>
+			<h4>Mobile Geo-Technologies for real-time cities</h4>
+		</li>
+
+		<li>
+			<h3>Geography</h3>
+			<h4>Urban Ecology (<a href="doc/ecology_ppt.pdf" target="_blank">Presentation</a>, <a href="doc/ecology_report.pdf" target="_blank">Report</a>)</h4>
+			<h4>Development of cities in Deutschland 1870-2020 (<a href="doc/berlin_ppt.pdf" target="_blank">Presentation</a>, <a href="doc/berlin_report.pdf" target="_blank">Report</a>)</h4>
+		</li>
+
+		<li>
+			<h3>Computer Science</h3>
+			<h4>Operating Systems and Networks</h4>
+			<h4>Algorithms and Data Structure</h4>
+			<h4>Knowledge Discovery in Databases</h4>
+			<h4>Cloud Computing</h4>
+		</li>
+	</section>
+
+	<section id="introduction">
+		<img id="avatar" src="img/avatar2.png" alt="" height="200" width="" class="img-circle" />
+		<p>My name is Sun Sen and I come from China.</p> 
+		<p>I am currently a master student at Heidelberg University in Germany.</p>
+		<p>My major is Geographical Information Science, or GIS for short.</p>
+		<p>I am interested in web development, data analysis and languages.</p>
+		<h4 id="contact">Contact</h4>
+		<p>sensun[at]live.cn</p>
+		<h4>About the sun and trees in the navbar</h4>
+		<p>They are the symbolisation of my name, because "sen(森)" means forest in Chinese and "sun" happens to write the same as "sun" in the "sunshine". I like it because it implies photosynthesis which makes our planet sustainable. </p>
+	</section>
+
+</div>
+<footer>© 2014 Sun Sen</footer>
+<script src="js/script.js"></script>
 </body>
-
-</html>
