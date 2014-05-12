@@ -5,7 +5,7 @@ $("nav li").on("click", function(){
 			$(this).removeClass("active");
 		}
 	);
-	$(sections[index]).show(500, function(){
+	$(sections[index]).show(300, function(){
 		$(sections[index]).addClass("active");
 	});
 });
