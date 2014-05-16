@@ -29,6 +29,10 @@ nav ul li:hover {
   background-color: #eee; }
 nav ul li:nth-last-child(2) {
   border-right: none; }
+nav ul i {
+  font-size: 0.8em;
+  padding-right: 0.5em;
+  color: #aaa; }
 
 #sun {
   float: left;
