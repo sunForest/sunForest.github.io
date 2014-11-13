@@ -16,12 +16,12 @@
 <div id="wrapper">
 	<nav>
 		<ul>
-			<img id="sun" src="img/sun.png" width="60" height="60" />
+			<img id="sun" class="icon" src="img/sun.png" />
+			<img id="forest" class="icon" src="img/forest.png" />
 			<li data-index="0"><i class="fa fa-archive"></i>Works</li>
 			<li data-index="1"><i class="fa fa-wrench"></i>Skills</li>
 			<li data-index="2"><i class="fa fa-book"></i>Courses</li>
 			<li data-index="3"><i class="fa fa-user"></i>About</li>
-			<img id="forest" src="img/forest.png" height="60" />
 		</ul>
 	</nav>
 
@@ -37,29 +37,30 @@
 
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
+
 			<div class="item active">
+				<img src="img/postcard.jpg" alt="Postcard Express">
+				<div class="carousel-caption">
+					<a href="http://www.globalpostcardexpress.com" target="_blank">Postcard Express</a> is my favorite side project. It's an app for sending digital postcards and recording their locations at the same time. A short introduction is available in this <a href="https://www.youtube.com/watch?v=1KZoaCDUJDk">demo video</a>.
+				</div>
+			</div>
+
+			<div class="item">
 				<img src="img/teleagro.jpg" alt="TeleAgro+">
 				<div class="carousel-caption">
-					<a href="http://teleagroplus.geog.uni-heidelberg.de/taplus_webgui/" target="_blank">TeleAgro+</a> is a navigation application for agricultural vehicles. I am currently working for this project as a student assistant.
+					<a href="http://teleagroplus.geog.uni-heidelberg.de/taplus_webgui/" target="_blank">TeleAgro+</a> is a navigation application for agricultural vehicles. I implemented the web interface and the mobile app for this application as a student assistant.
 				</div>
 			</div>
 
 			<div class="item">
-				<img src="img/stela.jpg" alt="">
-				<div class="carousel-caption">
-					<a href="http://stela.geog.uni-heidelberg.de/test" target="_blank">STELA</a> is crowd-sourcing application for the collection of solar panel locations in Germany. (Seminar Project)
-				</div>
-			</div>
-
-			<div class="item">
-				<img src="img/adventure.jpg" alt="">
+				<img src="img/adventure.jpg" alt="Adventure">
 				<div class="carousel-caption">
 					<a href="http://sunforest.github.io/adventure/" target="_blank">My adventure</a> is an experiment to combine the resume with an animated map.
 				</div>
 			</div>
 
 			<div class="item">
-				<img src="img/bubbles.jpg" alt="">
+				<img src="img/bubbles.jpg" alt="Random Bubbles">
 				<div class="carousel-caption">
 					<a href="http://sunforest.github.io/random_bubbles/" target="_blank">Random Bubbles</a> is an exercise for animating multiple elements at the same time.
 				</div>
@@ -111,7 +112,7 @@
 						<i class="fa fa-star-o"></i>
 					</span>
 				</h4>
-					<p><i class="fa fa-angle-double-right">&nbsp</i>jQuery, Openlayers, mapbox, d3, backbone, underscore,
+					<p><i class="fa fa-angle-double-right">&nbsp</i>jQuery, Openlayers, mapbox.js, d3, AngularJS, underscore, backbone,
 						requireJS</p>
 			</li>
 			<li>
@@ -189,22 +190,23 @@
 			<h4>Algorithms and Data Structures</h4>
 			<h4>Knowledge Discovery in Databases</h4>
 			<h4>Cloud Computing</h4>
+			<h4>Parallel Data Processing and Analysis</h4>
 		</li>
 	</section>
 
 	<section id="introduction">
 		<img id="avatar" src="img/avatar2.png" alt="" height="200" width="" class="img-circle" />
-		<p>My name is Sun Sen and I come from China.</p> 
-		<p>I am currently a master student at Heidelberg University in Germany.</p>
-		<p>My major is Geographical Information Science, or GIS for short.</p>
-		<p>I am interested in web development, data analysis and languages.</p>
-		<h4 id="contact">Contact</h4>
+		<p>My name is Sun Sen and I come from China.
+		I am currently a master student at Heidelberg University in Germany.</p>
+		<p>My major is Geographical Information Science, or GIS for short.
+		I am interested in web development, data analysis and languages.</p>
+		<h3 id="contact">Contact</h3>
 		<p>sensun[at]live.cn</p>
-		<h4>About the sun and trees in the navbar</h4>
+		<p><a href="https://github.com/sunForest">GitHub</a></p>
+		<h3>About the sun and trees in the navbar</h3>
 		<p>They are a symbolisation of my name, because "sen(森)" means forest in Chinese and "sun" happens to have the same spelling as "sun" in the "sunshine". I like it because it implies photosynthesis which makes our planet sustainable. </p>
 	</section>
-
+	<footer>© 2014 Sun Sen</footer>
 </div>
-<footer>© 2014 Sun Sen</footer>
 <script src="js/script.js"></script>
 </body>

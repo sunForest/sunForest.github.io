@@ -1,14 +1,20 @@
 *{
   font-family: 'Open Sans', sans-serif;
-  font-weight: lighter !important; 
+  font-weight: lighter; 
 }
 
 body {
 	background-color: rgb(255, 255, 255);
+	@media screen and (min-width: 800px){
+		font-size: 13px;
+	}
+	@media screen and (max-width: 480px){
+		font-size: 9px;
+	}
 }
 
 #wrapper {
-	width: 800px;
+	width: 70%;
 	margin: 1em auto;
 }
 
@@ -20,26 +26,33 @@ nav {
 	text-align: center;
 	border-bottom: 1px dashed #555;
 	padding-top: 2em;
-	margin-bottom: 6em;
+	margin-bottom: 3em;
 }
 
 nav ul {
+	list-style-type: none;
+
+	@media screen and (min-width: 1000px){
+		li{
+			display: inline-block;
+			border-right: 1px solid #555;
+			width: 7em;
+		}
+		li:last-child {
+			border-right: none; 
+		}
+	}
+
+
 
 	li {
-		display: inline-block;
 		margin: 0;
 		padding: 0 0.5em;
-		border-right: 1px solid #555;
-		width: 7em;
 		font-size: 1.5em;
 	}
 
 	li:hover {
 		background-color: #eee;
-	}
-
-	li:nth-last-child(2) {
-		border-right: none; 
 	}
 
 	i {
@@ -48,16 +61,21 @@ nav ul {
 		color: #aaa;
 	}
 }
-
-#sun {
-	float: left;
-	margin-left: -40px;
-	margin-top: -20px;
+.icon{
+	height: 4em;
 }
 
-#forest {
-	float: right;
-	margin-top: -20px;
+@media screen and (min-width: 1000px){
+	#sun {
+		float: left;
+		margin-left: -40px;
+		margin-top: -20px;
+	}
+
+	#forest {
+		float: right;
+		margin-top: -20px;
+	}
 }
 
 h3, h4 {
@@ -65,13 +83,13 @@ h3, h4 {
 }
 
 h3 {
-	text-decoration: underline;
-	font-weight: lighter;
+	font-weight: 900;
 	font-size: 1.2em;
 }
 
 h4 {
 	font-size: 1.2em;
+	font-weight: lighter;
 	padding: 0;
 	margin: 0.2em 3em;
 	margin-right: 0em;
@@ -103,7 +121,7 @@ h4 {
 }
 
 p {
-	margin: 0.5em 5em;
+	margin: 0.5em;
 	color: #555;
 	font-weight: lighter;
 	font-size: 1.1em;
@@ -111,7 +129,8 @@ p {
 
 section {
 	display: none !important;
-
+	width: 60%;
+	margin: 1em auto;
 }
 
 section.active {
@@ -119,22 +138,23 @@ section.active {
 }
 
 section ul {
-	width: 650px;
 	margin: 1em auto;
 }
 
 #courses {
 	margin: 0 auto;
-	width: 600px;
 	h4 {
 		width: 100%;
 		padding: 0.25em 0;
 	}
 }
 
-#works img {
-	width: 600px;
-	margin: 0 auto;
+#works {
+	width: 100%;
+	img {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 .carousel-caption {
@@ -143,6 +163,7 @@ section ul {
 		color: gold;
 	}
 }
+
 
 #avatar {
 	float: right;
@@ -155,11 +176,7 @@ section ul {
 
 footer {
 	text-align: center;
-	width: 100px;
-	left: 50%;
-	margin-left: -50px;
-	position: absolute;
-	bottom: 3em;
+	padding-top: 2em;
 	font-size: 0.8em;
 }
 
