@@ -56,6 +56,16 @@ nav ul {
   #forest {
     float: right;
     margin-top: -20px; } }
+
+nav a, nav a:hover, a.contact, a.contact:hover{
+  color: #333;
+}
+
+a.contact {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
 h3, h4 {
   color: #555; }
 
@@ -108,9 +118,9 @@ section.active {
 section ul {
   margin: 1em auto; }
 
-#courses {
+#writing {
   margin: 0 auto; }
-  #courses h4 {
+  #writing h4 {
     width: 100%;
     padding: 0.25em 0; }
 

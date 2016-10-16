@@ -18,10 +18,10 @@
 		<ul>
 			<img id="sun" class="icon" src="img/sun.png" />
 			<img id="forest" class="icon" src="img/forest.png" />
-			<li data-index="0"><i class="fa fa-archive"></i>Works</li>
-			<li data-index="1"><i class="fa fa-wrench"></i>Skills</li>
-			<li data-index="2"><i class="fa fa-book"></i>Courses</li>
-			<li data-index="3"><i class="fa fa-user"></i>About</li>
+			<li data-index="0"><i class="fa fa-archive"></i><a href="#works">Works</a></li>
+			<li data-index="1"><i class="fa fa-wrench"></i><a href="#skills">Skills</a></li>
+			<li data-index="2"><i class="fa fa-book"></i><a href="#writing">Writing</a></li>
+			<li data-index="3"><i class="fa fa-user"></i><a href="#about">About</li>
 		</ul>
 	</nav>
 
@@ -39,9 +39,16 @@
 		<div class="carousel-inner">
 
 			<div class="item active">
-				<img src="img/postcard.jpg" alt="Postcard Express">
+				<img src="img/avipost.png" alt="Postcard Express">
 				<div class="carousel-caption">
-					<a href="http://www.globalpostcardexpress.com" target="_blank">Postcard Express</a> is my favorite side project. It's an app for sending digital postcards and recording their locations at the same time. A short introduction is available in this <a href="https://www.youtube.com/watch?v=1KZoaCDUJDk">demo video</a>.
+					<a href="http://www.globalpostcardexpress.com" target="_blank">Postcard Express</a> is an app for sending digital postcards. A short introduction is available in this <a href="https://www.youtube.com/watch?v=1KZoaCDUJDk">demo video</a>.
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="img/minesweeper.png" alt="Mine Sweeper">
+				<div class="carousel-caption">
+					<a href="http://sunforest.github.io/mineSweeper/build" target="_blank">MineSweeper</a> is an implementation of the classical computer game with React and Immutable.js.
 				</div>
 			</div>
 
@@ -49,13 +56,6 @@
 				<img src="img/teleagro.jpg" alt="TeleAgro+">
 				<div class="carousel-caption">
 					<a href="http://teleagroplus.geog.uni-heidelberg.de/taplus_webgui/" target="_blank">TeleAgro+</a> is a navigation application for agricultural vehicles. I implemented the web interface and the mobile app for this application as a student assistant.
-				</div>
-			</div>
-
-			<div class="item">
-				<img src="img/adventure.jpg" alt="Adventure">
-				<div class="carousel-caption">
-					<a href="http://sunforest.github.io/adventure/" target="_blank">My adventure</a> is an experiment to combine the resume with an animated map.
 				</div>
 			</div>
 
@@ -85,8 +85,8 @@
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
 						<i class="fa fa-star-half-o"></i>
-						<i class="fa fa-star-o"></i>
 					</span>
 				</h4>
 
@@ -96,8 +96,8 @@
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
 						<i class="fa fa-star-half-o"></i>
-						<i class="fa fa-star-o"></i>
 					</span>
 				</h4>
 					<p><i class="fa fa-angle-double-right">&nbsp</i>media query, animation, Sass, Twitter Bootstrap</p>
@@ -109,32 +109,40 @@
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
-						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star"></i>
 					</span>
 				</h4>
-					<p><i class="fa fa-angle-double-right">&nbsp</i>jQuery, Openlayers, mapbox.js, d3, AngularJS, underscore, backbone,
-						requireJS</p>
+					<p><i class="fa fa-angle-double-right">&nbsp</i>jQuery, d3, AngularJS, React, lodash</p>
 			</li>
 			<li>
 				<h3>Back End Development</h3>
-				<h4><span class="skill-name">django (Python)</span>
+				<h4><span class="skill-name">Django (Python)</span>
 					<span class="rating-blue">
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
 						<i class="fa fa-star-half-o"></i>
-						<i class="fa fa-star-o"></i>
+					</span>
+				</h4>
+				<h4><span class="skill-name">Node.js</span>
+					<span class="rating-blue">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
 					</span>
 				</h4>
 			</li>
 			<li>
 				<h3>Mobile Development</h3>
-				<h4><span class="skill-name">Android</span>
+				<h4><span class="skill-name">iOS (Swift)</span>
 					<span class="rating-green">
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
-						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-half-o"></i>
 						<i class="fa fa-star-o"></i>
 					</span>
 				</h4>
@@ -150,32 +158,38 @@
 						<i class="fa fa-star-o"></i>
 					</span>
 				</h4>
-				<h4><span class="skill-name">MongoDB</span>
+				<h4><span class="skill-name">CouchDB</span>
 					<span class="rating-pink">
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
-						<i class="fa fa-star-o"></i>
-						<i class="fa fa-star-o"></i>
-						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+					</span>
+				</h4>
+				<h4><span class="skill-name">Redis</span>
+					<span class="rating-pink">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
 					</span>
 				</h4>
 			</li>
 			<li>
-				<h3>Design Patterns</h3>
-				<h4>MVC, REST, Mediator</h4>
+				<h3>Others</h3>
+				<h4>Linux, AWS, Git, Docker</h4>
 			</li>
 		</ul>
 	</section>
 
-	<section id="courses">
+	<section id="writing">
 		<ul>
 		<li>
 			<h3>GIS</h3>
 			<h4>Webmapping (<a href="doc/webmapping_ppt.pdf" target="_blank">Presentation</a>, <a href="doc/webmapping_report.pdf" target="_blank">Report</a>)</h4>
-			<h4>Geoscripting</h4>
-			<h4>GIS-Analysis with Free und Open Source Software</h4>
-			<h4>Geodatabases</h4>
-			<h4>Mobile Geo-Technologies for real-time cities</h4>
+			<h4>Master Thesis (<a href="doc/thesis.pdf" target="_blank">In-field Routing for Agricultural Vehicles through Convex Hull Generation</a>)</h4>
 		</li>
 
 		<li>
@@ -183,30 +197,21 @@
 			<h4>Urban Ecology (<a href="doc/ecology_ppt.pdf" target="_blank">Presentation</a>, <a href="doc/ecology_report.pdf" target="_blank">Report</a>)</h4>
 			<h4>Development of cities in Deutschland 1870-2020 (<a href="doc/berlin_ppt.pdf" target="_blank">Presentation</a>, <a href="doc/berlin_report.pdf" target="_blank">Report</a>)</h4>
 		</li>
-
-		<li>
-			<h3>Computer Science</h3>
-			<h4>Operating Systems and Networks</h4>
-			<h4>Algorithms and Data Structures</h4>
-			<h4>Knowledge Discovery in Databases</h4>
-			<h4>Cloud Computing</h4>
-			<h4>Parallel Data Processing and Analysis</h4>
-		</li>
 	</section>
 
-	<section id="introduction">
-		<img id="avatar" src="img/avatar2.png" alt="" height="200" width="" class="img-circle" />
-		<p>My name is Sun Sen and I come from China.
-		I am currently a master student at Heidelberg University in Germany.</p>
-		<p>My major is Geographical Information Science, or GIS for short.
-		I am interested in web development, data analysis and languages.</p>
+	<section id="about">
+		<img id="avatar" src="img/avatar.jpg" alt="" height="200" width="" class="img-circle" />
+		<p>My name is Sun Sen. I'm a web developer and I enjoy being one.</p>
 		<h3 id="contact">Contact</h3>
-		<p>sensun[at]live.cn</p>
-		<p><a href="https://github.com/sunForest">GitHub</a></p>
+		<p>
+			<a class="contact" href="mailto:sensun@live.cn" target="_blank"><i class="fa fa-envelope-o"></i></a>
+			<a class="contact" href="https://github.com/sunForest" target="_blank"><i class="fa fa-github"></i></a>
+			<a class="contact" href="https://www.linkedin.com/in/sunforest" target="_blank"><i class="fa fa-linkedin"></i></a>
+		</p>
 		<h3>About the sun and trees in the navbar</h3>
 		<p>They are a symbolisation of my name, because "sen(森)" means forest in Chinese and "sun" happens to have the same spelling as "sun" in the "sunshine". I like it because it implies photosynthesis which makes our planet sustainable. </p>
 	</section>
-	<footer>© 2014 - 2015 Sun Sen</footer>
+	<footer>© 2014 - 2016 Sun Sen</footer>
 </div>
 <script src="js/script.js"></script>
 <script>
